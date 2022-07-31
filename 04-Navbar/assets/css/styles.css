@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-#nav {
+.navbar {
     max-width: 1170px;
     display: flex;
     justify-content: space-between;
@@ -33,28 +35,28 @@ body {
     height: 40px;
 }
 
-.bars {
+.nav-toggle {
     display: none;
     color:#49A6E9;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-.bars:hover {
-    color: hsl(209, 34%, 30%);
+.nav-toggle:hover {
+    color: #324d67;
     transform: rotate(90deg);
     transition: all 0.3s linear;;
 }
 
-li {
+ul li {
     display: inline-block
 }
 
-.links a:hover  {
+.nav-menu a:hover  {
     color: #49A6E9;
 }
 
-.links a {
+.nav-menu a {
     color: #324D67;
 }
 
@@ -64,16 +66,16 @@ a {
     padding: 0 0.5rem;
 }
 
-.nav-right a {
+.nav-links a {
     color: #49A6E9;
 }
 
-.nav-right li:hover {
+.nav-links li:hover {
     opacity: 0.6;
 }
 
 @media only screen and (max-width: 800px) {
-    #nav {
+    .navbar {
         display: block;
         flex-direction: column;
         padding: 0;
@@ -84,28 +86,28 @@ a {
         justify-content: space-between;
         padding: 1rem;
     }
-    .links {
+    .nav-menu {
         height: 0;
         overflow: hidden;
         transition: all 0.3s linear;
     }
-    .links a {
+    .nav-menu a {
         display: block;
         padding: 8px 16px;
         transition: all 0.3s linear;
     }
-    .links li {
+    .nav-menu li {
         display: block;
     }
-    .links a:hover  {
+    .nav-menu li a:hover  {
         color: #49A6E9;
         background: #A5D5F8;
         padding-left: 1.5rem;
     }
-    .bars {
+    .nav-toggle {
         display: block;
     }
-    .nav-right {
+    .nav-links {
         display: none;
     }
     .nav-center {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +9,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    background-color: hsl(206, 33%, 96%);;
+    background-color: #f2f5f7;
 }
 
-#header {
+header {
     background-color: #fff;
     height: 3rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -26,18 +28,18 @@ body {
 }
 
 #nav .text-header {
-    color: hsl(205, 78%, 60%);
+    color: #49a6e9;
     font-size: 1rem;
     letter-spacing: 4px;
     font-weight: 700;
 }
 
-#nav li{
+#nav ul li{
     display: inline-block;
 }
 
-#nav a {
-    color: hsl(205, 86%, 17%);
+#nav ul li a {
+    color: #063251;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 4px;
@@ -45,11 +47,11 @@ body {
     padding-right: 8px;
 }
 
-#nav li:hover a {
-    color: hsl(205, 78%, 60%);
+#nav ul li:hover a {
+    color: #49a6e9;
 }
 
-#content {
+#container {
     min-height: calc(100vh - 3rem);
     display: flex;
     justify-content: center;
@@ -68,24 +70,27 @@ body {
 }
 
 .color {
-    color: hsl(205, 78%, 60%);
+    color: #49a6e9;
 }
 
-.change-btn {
+.button{
     display: inline-block;
     margin-top: 40px;
     color: #222;
     border: 2px solid #222;
-    background-color: hsl(206, 33%, 96%);
+    background-color: #f1f5f8;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding: 12px 20px;
     font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     border-radius: 0.5rem;
 }
 
-.change-btn:hover {
+.button:hover {
     color: #fff;
     background-color: #222;
+    cursor: pointer;
 }

@@ -39,6 +39,15 @@ hr {
     margin: 0 auto;
 }
 
+.form {
+    margin-top: 64px;
+    padding: 24px 32px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
 .img-container {
     position: relative;
     width: 150px;
@@ -77,14 +86,7 @@ hr {
     border-radius: 50%;
 }
 
-.form-section {
-    margin-top: 64px;
-    padding: 24px 32px;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    text-align: center;
-}
+
 
 h3 {
     color: #102A42;

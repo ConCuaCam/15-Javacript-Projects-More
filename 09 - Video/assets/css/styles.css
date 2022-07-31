@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(210, 36%, 96%);
+}
+
+.side-bar {
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+    top: 0;
+    left: -400px;
+    transition: all 0.3s linear;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+#header .nav-close {
+    font-size: 1.8rem;
+    color: #bb2525;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+#header .nav-close:hover {
+    opacity: 0.8;
+} 
+
+nav .nav-menu li a {
+    position: relative;
+    display: block;
+    color: #617D98;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    transition: all 0.3s linear;
+}
+
+nav .nav-menu li a:hover {
+    color: #49A6E9;
+    background-color: hsl(205, 86%, 81%);
+    padding-left: 2rem;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+nav .nav-links li {
+    list-style-type: none;
+    padding: 0 0.5rem;
+}
+
+nav .nav-links li a {
+    color: #49A6E9;
+    font-size: 1.5rem;
+}
+
+nav .nav-links li a:hover {
+    color: hsl(205, 86%, 17%);
+}
+
+.menu-btn  {
+    color: #49A6E9;
+    font-size: 3rem;
+    position: absolute;
+    margin: 2rem 3rem;
+    top: 0;
+    right: 0;
+}
+
+.menu-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
