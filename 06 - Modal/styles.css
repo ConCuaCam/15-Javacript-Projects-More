@@ -8,7 +8,7 @@
 
 .bg-img {
     height: 100vh;
-    background: url(/assets/img/hero.jpeg) center / cover no-repeat;
+    background: url(hero.jpeg) top center / cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
