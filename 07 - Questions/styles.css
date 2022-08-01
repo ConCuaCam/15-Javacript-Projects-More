@@ -16,18 +16,18 @@ h1 {
     font-family: 'Great Vibes', cursive;
     color: #C59D5F;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 64px;
     letter-spacing: 0.25rem;
 }
 
-.container-form {
+.accordion {
     display: grid;
     place-items: center;
     gap: 2rem;
 }
 
-.container-form .form {
+.accordion-item {
     width: 620px;
     background-color: #fff;
     border-radius: 0.5rem;
@@ -35,35 +35,36 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.answer.active {
-    display: block;
-}
 
-.container-form .form .form-question {
-    position: relative;
+
+.accordion-item-header {
     padding: 0 0 16px;
-}
-.form .form-question .question {
     color: #102A42;
     letter-spacing: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.form .form-question .plus-icon {
-    position: absolute;
+.accordion-item-header .icon {
     color: #C59D5F;
-    border: 3px solid #C59D5F;
-    border-radius: 3px;
-    top: 0;
-    right: 0;
-    padding: 0 2px;
+    font-size: 1.5rem;
     transition:  all 0.3s linear;
 }
 
-.form .form-question .minus-icon {
+.accordion-item-header .icon .minus-icon {
     display: none;
 }
 
-.form .form-question i:hover {
+.accordion-item-header .icon .minus-icon.active {
+    display: block;
+}
+
+.accordion-item-header .icon .plus-icon.active {
+    display: none;
+}
+
+.accordion-item-header .icon:hover{
     transform: rotate(90deg);
     cursor: pointer;
 }
@@ -73,5 +74,9 @@ h1 {
     color: #617D98;
     border-top: 1px solid #617D98;
     display: none;
+}
+
+.answer.active {
+    display: block;
 }
 
