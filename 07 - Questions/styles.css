@@ -35,8 +35,6 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .accordion-item-header {
     padding: 0 0 16px;
     color: #102A42;
@@ -52,15 +50,15 @@ h1 {
     transition:  all 0.3s linear;
 }
 
-.accordion-item-header .icon .minus-icon {
+.accordion-item .icon .minus-icon {
     display: none;
 }
 
-.accordion-item-header .icon .minus-icon.active {
+.accordion-item.active  .icon .minus-icon {
     display: block;
 }
 
-.accordion-item-header .icon .plus-icon.active {
+.accordion-item.active .icon .plus-icon {
     display: none;
 }
 
@@ -76,7 +74,7 @@ h1 {
     display: none;
 }
 
-.answer.active {
+.accordion-item.active .answer{
     display: block;
 }
 

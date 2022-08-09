@@ -7,6 +7,7 @@
 body {
     font-size: 1rem;
 }
+
 main {
     height: 100vh;
     display: flex;
@@ -18,6 +19,7 @@ main {
 .review {
     width: 80vw;
     max-width: 620px;
+    position: relative;
 }
 
 h1 {
@@ -39,7 +41,8 @@ hr {
     margin: 0 auto;
 }
 
-.form {
+.mySlides {
+    display: none;
     margin-top: 64px;
     padding: 24px 32px;
     background-color: #fff;
@@ -124,12 +127,14 @@ h3 {
     opacity: 1;
 }
 .random-btn {
+    position: relative;
     margin-top: 0.5rem;
     color: #49A6E9;
     border-color: #49a6e9;
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    left:
 }
 
 .random-btn:hover {

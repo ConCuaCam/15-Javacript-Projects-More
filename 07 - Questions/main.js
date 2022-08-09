@@ -1,17 +1,17 @@
+const accordion = document.querySelectorAll(".accordion-item");
 
-const questions = document.querySelectorAll(".answer");
-
-questions.forEach(function (answer) {
-  const btn = answer.querySelector(".icon");
-
+accordion.forEach(function (question) {
+  const btn = question.querySelector(".icon");
   btn.addEventListener("click", function () {
-
-    questions.forEach(function (item) {
-      if (item !== answer) {
+    accordion.forEach(function (item) {
+      if (item !== question) {
         item.classList.remove("active");
       }
     });
-
-    accordion-item-answer.classList.toggle("active");
+    question.classList.toggle("active");
   });
 });
+
+
+
+
